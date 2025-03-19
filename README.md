@@ -9,7 +9,33 @@ minimal effort.
 
 ## Installation
 
-To come later, for now these commands are just for me to remember
+Follow these steps to set up the project:
+
+1. **Install Dependencies**
+
+```sh
+pip install -r requirements.txt
+```
+
+2. **Copy the Environment File**
+
+```sh
+cp .env.copy .env
+```
+
+3. **Copy the Default Configuration File**
+
+```sh
+cp default-config.json config.json
+```
+
+4. **Run app**
+
+```sh
+python main.py
+```
+
+More steps to come later, for now these commands are just for me to remember
 
 `conda activate myenv`
 
