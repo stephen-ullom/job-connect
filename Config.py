@@ -32,7 +32,7 @@ class Configuration:
                 self.user = User(**data['user'])
                 self.emailTemplate = EmailTemplate(**data['emailTemplate'])
                 self.technologies = data['technologies']  # Directly as a list
-                self.fuzzy_confidence = data['fuzzy_confidence']
+                self.fuzzy_confidence = data.get('fuzzy_confidence', 80.0)
             except json.JSONDecodeError as e:
                 print(f"Error reading config: {e}")
                 raise e
